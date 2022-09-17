@@ -1,0 +1,176 @@
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(217, 54%, 11%);
+    font-size: 18px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Utility class */
+
+.out {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 800px;
+}
+
+.card-layout {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 14px;
+    margin: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+
+.card-image {
+    display: block;
+    width: 232px;
+    height: 240px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 93.5%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 12px;
+  }
+  
+  .image-container:hover .overlay {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+.card-content {
+    position: absolute;
+    top: 440px;
+    display: flex;
+    flex-direction: column;
+    width: 232px;
+    height: 190px;
+}
+
+.main-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.main-heading:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.the-paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.price-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    width: 240px;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: hsl(178, 100%, 50%);
+    margin-right: 5rem;
+}
+
+.time {
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+    margin-left: .4rem;
+}
+
+.ethereum {
+    height: 16px;
+    margin-right: 5px;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    background-color: hsl(215, 32%, 27%);
+    margin-bottom: 1rem;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    width: 232px;
+    height: 28px;
+}
+
+.author-image {
+    display: flex;
+    width: 30px;
+    height: 28px;
+    border-radius: 20px;
+    border: solid white 1px;
+    margin-right: 1rem;
+}
+
+.author-name {
+    display: flex;
+    align-self: center;
+    font-size: 14px;
+    color: hsl(215, 51%, 70%);
+}
+
+.white-text {
+    color: aliceblue;
+}
+
+.white-text:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
